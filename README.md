@@ -32,5 +32,10 @@ Dilate:     `dilation = cv2.dilate(img,kernel,iterations = 1)`
 膨胀也可以用来连接两个分开的物体。
 
 #### Morph Open & Close
+Morph Open:      `opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)`      
+先进性腐蚀再进行膨胀就叫做开运算。就像我们上面介绍的那样，它被用来去除噪声。
+
+Morph Close:    `closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)`      
+先膨胀再腐蚀。它经常被用来填充前景物体中的小洞，或者前景物体上的小黑点。        
 
 #### Gradient, Tophat & Blackhat
