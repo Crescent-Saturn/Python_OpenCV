@@ -49,4 +49,10 @@ Saved As Python3.sublime-build.
 进行闭运算之后得到的图像与原始图像的差。
 
 
+*The whole relationship is*:            
+**Opening**:        `dst = open(src, kernel) = dilate(erode(src, kernel), kernel)`      
+**Closing**:        `dst = close(src, kernel) = erode(dilate(src, kernel), kernel)`         
+**Gradient**:       `dst = gradient(src, kernel) = dilate(src, kernel) - erode(src, kernel)`      
+**Tophat**:         `dst = tophat(src, kernel) = src - open(src, kernel)`           
+**Blackhat**        `dst = blackhat(src, kernel) = close(src, kernel) - src`        
 
