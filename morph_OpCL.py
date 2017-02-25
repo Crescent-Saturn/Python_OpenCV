@@ -8,7 +8,10 @@ kernel = np.ones((5, 5), np.uint8)
 # dilate = cv2.dilate(img, kernel, iterations=1)
 
 opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
+# morph_open == dilate(erode(img, kernel), kernel)
+
 closiing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+# morph_close == erode(dilate(img, kernel), kernel)
 
 cv2.imshow('Orig', img)
 # cv2.imshow('Erode', erosion)
