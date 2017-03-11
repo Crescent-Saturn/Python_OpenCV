@@ -8,7 +8,7 @@ Learning OpenCV in Python by the official tutorials.
 `Tools -> Build System -> New Build System`
 
     {
-     "cmd": ["usr/bin/python3", "$file"], 
+     "cmd": "usr/bin/python3", "${file}", 
      "selector": "source.python", 
       "file_regex": "file \"(...*?)\", line ([0-9]+)"
     }
