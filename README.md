@@ -10,6 +10,7 @@ Learning OpenCV in Python by the official tutorials.
     {
      "cmd": "usr/bin/python3", "${file}", 
      "selector": "source.python", 
+     "encoding": "utf8",
       "file_regex": "file \"(...*?)\", line ([0-9]+)"
     }
     
